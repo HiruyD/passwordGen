@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="boxer">
+      <!-- Theme toggle button -->
+      <img
+        src="/images/theme.png"
+        alt="Click Me"
+        id="theme"
+        onclick="toggleTheme()"
+      />
+      <!-- Main heading -->
+      <h1>Generate a random password</h1>
+      <!-- Supporting text -->
+      <p>Click on toggle to remove symbols.</p>
+      <!-- Button to generate password -->
+      <button id="generate" onclick="generatePassword()">
+        Generate Password
+      </button>
+      <!-- Toggle switch for including/excluding special characters -->
+      <label class="switch">
+        <input type="checkbox" id="toggleSwitch" onclick="toggleSymbol()" />
+        <span class="slider"></span>
+      </label>
+      <!-- Horizontal line separator -->
+      <hr />
+      <!-- Span to display the first generated password -->
+      <span
+        id="password1"
+        class="spawner"
+        onclick="copyToClipboard(this)"
+      ></span>
+      <!-- Span to display the second generated password -->
+      <span
+        id="password2"
+        class="spawner"
+        onclick="copyToClipboard(this)"
+      ></span>
+    </div>
+  </body>
+</html>

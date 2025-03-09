@@ -1,0 +1,179 @@
+/* Heading */
+h1 {
+  position: absolute;
+  width: 354px;
+  height: 80px;
+  left: 52px;
+  top: 115px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.025em;
+  color: #ffffff; /* white */
+}
+
+/* Supporting text */
+p {
+  position: absolute;
+  width: 372px;
+  height: 28px;
+  left: 52px;
+  top: 205px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #d5d4d8; /* Medium grey */
+}
+
+/* Container for the main content */
+.boxer {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  left: 62px;
+  top: 64px;
+  background: #1f2937; /* Dark background */
+}
+
+/* Button styling */
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 17px 9px 15px;
+  gap: 12px;
+  position: absolute;
+  width: 191px;
+  height: 42px;
+  left: 52px;
+  top: 284px;
+  background: #10b981; /* Green background */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); /* Shadow */
+  border-radius: 6px;
+}
+
+/* Horizontal line styling */
+hr {
+  position: absolute;
+  width: 446px;
+  height: 0px;
+  left: 52px;
+  top: 361px;
+  border: 1px solid #2f3e53; /* Dark border */
+}
+
+/* First password span styling */
+#password1 {
+  position: absolute;
+  width: 211px;
+  height: 39px;
+  left: 52px;
+  top: 396px;
+  background: #273549; /* Dark background */
+  border-radius: 6px;
+}
+
+/* Second password span styling */
+#password2 {
+  position: absolute;
+  width: 211px;
+  height: 39px;
+  left: 287px;
+  top: 396px;
+  background: #273549; /* Dark background */
+  border-radius: 6px;
+}
+
+/* Theme toggle button styling */
+#theme {
+  position: absolute;
+  width: 53px;
+  height: 55px;
+  left: 467px;
+  top: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* Drop shadow */
+}
+
+/* Password text styling */
+.spawner {
+  position: absolute;
+  width: 180px;
+  height: 32px;
+  left: 67px;
+  top: 400px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: #55f991; /* Green text */
+}
+
+/* Dark theme styling */
+.dark-theme {
+  filter: invert(1);
+  transition: all 0.3s ease;
+  button {
+    background: #c93d8a; /* Pink background for button in dark theme */
+  }
+}
+
+/* Switch styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 71px;
+  height: 42px;
+  left: 449px;
+  top: 284px;
+  background: #10b981; /* Green background */
+  border-radius: 100px;
+}
+
+/* Hide the default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Style the slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Light grey background */
+  transition: 0.4s;
+  border-radius: 25px;
+}
+
+/* Style the circle inside the switch */
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 27px;
+  width: 27px;
+  left: 8px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+  top: calc(50% - 27px / 2 - 0.5px);
+}
+
+/* When the switch is checked */
+input:checked + .slider {
+  background-color: #2196f3; /* Blue background */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px); /* Move the circle to the right */
+}
