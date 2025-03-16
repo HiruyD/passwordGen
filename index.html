@@ -20,14 +20,13 @@
       <!-- Main heading -->
       <h1>Generate a random password</h1>
       <!-- Supporting text -->
-      <li>
-        <ul class="ul1">
-          - Symbols in your password.
-        </ul>
-        <ul class="ul2">
-          - Use Upper case only
-        </ul>
-      </li>
+
+      <ul class="ul1">
+        - Symbols in your password.
+      </ul>
+      <ul class="ul2">
+        - Use Upper case only
+      </ul>
 
       <!-- Button to generate password -->
       <button id="generate" onclick="generatePassword()">
@@ -36,6 +35,10 @@
       <!-- Toggle switch for including/excluding special characters -->
       <label class="switch">
         <input type="checkbox" id="toggleSwitch" onclick="toggleSymbol()" />
+        <span class="slider"></span>
+      </label>
+      <label class="switch2">
+        <input type="checkbox" id="toggleSwitch" onclick="toggleupper()" />
         <span class="slider"></span>
       </label>
       <!-- Horizontal line separator -->

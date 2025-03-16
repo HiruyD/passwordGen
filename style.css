@@ -133,7 +133,9 @@ hr {
   filter: invert(1);
   transition: all 0.3s ease;
   button {
-    background: #c93d8a; /* Pink background for button in dark theme */
+    background: #c93d8a;
+    padding: 10px;
+    /* Pink background for button in dark theme */
   }
 }
 
@@ -150,8 +152,24 @@ hr {
   border-radius: 100px;
 }
 
+.switch2 {
+  position: relative;
+  display: inline-block;
+  width: 71px;
+  height: 42px;
+
+  left: 374px;
+  top: 283px;
+  background: #10b981; /* Green background */
+  border-radius: 100px;
+}
 /* Hide the default checkbox */
 .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch2 input {
   opacity: 0;
   width: 0;
   height: 0;

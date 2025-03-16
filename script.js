@@ -26,6 +26,18 @@ let characters = [
   "X",
   "Y",
   "Z",
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+];
+let characters3 = [
   "a",
   "b",
   "c",
@@ -52,16 +64,6 @@ let characters = [
   "x",
   "y",
   "z",
-  "0",
-  "1",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
 ];
 
 // Array of special characters to be optionally included in password generation
@@ -99,6 +101,7 @@ let characters2 = [
 
 // Boolean to track whether special characters should be included
 let sym = false;
+let upper = false;
 
 // Function to toggle the inclusion of special characters in the password
 function toggleSymbol() {
@@ -109,6 +112,15 @@ function toggleSymbol() {
   } else {
     // If sym is false, filter out characters2 from characters
     characters = characters.filter((char) => !characters2.includes(char));
+  }
+}
+
+function toggleupper() {
+  upper = !upper; // Toggle the boolean value
+  if (upper) {
+    characters = characters.filter((char) => !characters3.includes(char));
+  } else {
+    characters = characters.concat(characters3);
   }
 }
 
